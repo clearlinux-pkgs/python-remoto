@@ -4,7 +4,7 @@
 #
 Name     : python-remoto
 Version  : 1.2.1
-Release  : 3
+Release  : 4
 URL      : https://github.com/alfredodeza/remoto/archive/refs/tags/1.2.1.tar.gz
 Source0  : https://github.com/alfredodeza/remoto/archive/refs/tags/1.2.1.tar.gz
 Summary  : Execute remote commands or processes.
