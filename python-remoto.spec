@@ -4,7 +4,7 @@
 #
 Name     : python-remoto
 Version  : 1.2.1
-Release  : 5
+Release  : 6
 URL      : https://github.com/alfredodeza/remoto/archive/refs/tags/1.2.1.tar.gz
 Source0  : https://github.com/alfredodeza/remoto/archive/refs/tags/1.2.1.tar.gz
 Summary  : Execute remote commands or processes.
@@ -13,14 +13,13 @@ License  : MIT
 Requires: python-remoto-license = %{version}-%{release}
 Requires: python-remoto-python = %{version}-%{release}
 Requires: python-remoto-python3 = %{version}-%{release}
-Requires: execnet
 BuildRequires : buildreq-distutils3
-BuildRequires : execnet
-BuildRequires : pluggy
-BuildRequires : py-python
-BuildRequires : pytest
-BuildRequires : tox
-BuildRequires : virtualenv
+BuildRequires : pypi(execnet)
+BuildRequires : pypi(py)
+BuildRequires : pypi-pluggy
+BuildRequires : pypi-pytest
+BuildRequires : pypi-tox
+BuildRequires : pypi-virtualenv
 
 %description
 remoto
@@ -66,7 +65,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1632953279
+export SOURCE_DATE_EPOCH=1644191134
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
